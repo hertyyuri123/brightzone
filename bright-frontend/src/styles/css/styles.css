@@ -94,11 +94,15 @@ a {
   align-items: center;
   font-size: 18px;
   font-weight: 350;
+  height: 35px;
   width: auto;
 }
 .category-box .category:hover {
   font-weight: 400;
   font-style: bold;
+}
+.category-box .category:focus-within {
+  border-bottom: 1px solid black;
 }
 
 .footer {

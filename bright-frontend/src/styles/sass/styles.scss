@@ -32,11 +32,16 @@
         @include center();
         font-size: 18px;
         font-weight: 350;
+        height: 35px;
         width: auto;
     
         &:hover {
             font-weight: 400;
             font-style: bold;
+        }
+
+        &:focus-within {
+            border-bottom: 1px solid black;
         }
     }
 }
