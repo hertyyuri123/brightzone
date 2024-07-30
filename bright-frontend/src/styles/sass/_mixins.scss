@@ -1,0 +1,19 @@
+@mixin center($d: flex, $j: center, $a: center) {
+    display: $d;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@mixin size($h, $w) {
+    height: $h;
+    width: $w;
+}
+
+@mixin espacamento($p, $m) {
+    padding: $p;
+    margin: $m;
+}
+    
+@mixin custom-border($color, $width: 1px, $style: solid) {
+    border: $width $style $color;
+}

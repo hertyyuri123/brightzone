@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'base';
+@import 'mixins';
+@import 'searchBar';
+
+
+.header {
+    @include center(flex, center, center);
+    height: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.logo-box {
+    @include center();
+
+    .logo {
+        cursor: pointer;
+    }
+}
+
+.category-box {
+    @include center();
+    flex-direction: row;
+    gap: 45px;
+
+    .category {
+        @include center();
+        font-size: 18px;
+        font-weight: 350;
+        width: auto;
+    
+        &:hover {
+            font-weight: 400;
+            font-style: bold;
+        }
+    }
+}
+
+
+
+.footer {
+    background-color: $contrast-color;
+    margin-top: 40%;
+}

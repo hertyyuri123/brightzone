@@ -1,0 +1,49 @@
+.search-container {
+  @include center();
+  height: 40px;
+  margin-left: 70px; // verificar
+  border-bottom: 1px solid rgb(214, 214, 214);
+
+  &:focus-within {
+    border-bottom: 1px solid black;
+    
+  }
+}
+
+.search-form {
+  @include center();
+  flex-direction: row-reverse;
+  height: 40px; // verificar
+
+  input {
+    @include size(30px, 0);
+    width: 214px; // verificar
+    border: none;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .searchButton {
+    @include size(40px, 40px); // verificar
+    @include center();
+    border: none;
+    background-color: $contrast-color;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  .searchIcon {
+    @include size(40px, 40px);
+  }
+}
+
+/*.btn {
+    background-color: $bg-btn
+    color: $bg-color
+    padding: $bg-padding
+    border-radius: $bg-br
+}
+*/
